@@ -1,0 +1,6 @@
+<h1>Account number: {{ account.number }}</h1>
+<ul>
+{% for credit in account.credit_set.all %}
+    <li> Сredit amount: {{ credit.sum }};  Date:{{ credit.date}}</li>
+{% endfor %}
+</ul>

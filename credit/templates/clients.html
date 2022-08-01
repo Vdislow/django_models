@@ -1,0 +1,7 @@
+{% if clients_list %}
+    <ul>
+    {% for client in clients_list %}
+        <h2><a href="{% url 'detail_client' client.id %}">{{ client.name }}</a></h2>
+    {% endfor %}
+    </ul>
+{% endif %}
